@@ -1,0 +1,32 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  background: #fff;
+  height: 85px;
+  display: flex;
+  padding: 0 10%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar > h1 {
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: bolder;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  font-size: 12px;
+}
+
+.hero-container {
+  height: 470px;
+  background: #879a88;
+}
