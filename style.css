@@ -1,32 +1,111 @@
+:root {
+  --Primary: #2c2c2c;
+  --bg: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
 body {
+  background-color: var(--bg);
+  color: var(--Primary);
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;;
 }
 
 .navbar {
-  background: #fff;
+  /* background: rgba(0, 0, 0, 0.2); */
   height: 85px;
   display: flex;
-  padding: 0 10%;
+  padding: 1.4rem 7%;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
-.navbar > h1 {
+.navbar .navbar-logo {
+  color: var(--Primary);
   font-size: 2rem;
   font-family: "Inter", sans-serif;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
-.nav-menu {
-  display: flex;
-  gap: 30px;
-  font-size: 12px;
+.navbar .navbar-logo span {
+  color: #879a88;
 }
 
-.hero-container {
-  height: 470px;
-  background: #879a88;
+.navbar .navbar-nav a{
+  color: var(--Primary);
+  position: relative;
+  /* display: inline-block; */
+  font-size: 0.9rem;
+  margin: 0 0.5rem;
+}
+ /* untuk berubah warna saaat di hover */
+.navbar .navbar-nav a:hover{
+  color: #879a88;
+}
+/* untuk memberi animasi underline */
+.navbar .navbar-nav a::after{
+  content: '';
+  position: absolute;
+  background-color: #879a88;
+  height: 1.5px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.25s;
+}
+
+.navbar .navbar-nav a:hover::after {
+  width: 100%;
+}
+
+.navbar .navbar-extra a{
+  color: var(--Primary);
+  position: relative;
+  font-size: 0.9rem;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover{
+  color:#879a88;
+}
+
+.navbar .navbar-extra span{
+  margin: 0 0.9rem;
+}
+
+
+/* Media Queries */
+
+/* ==========================================Laptop/Desktop============================================ */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* ==============================================Tablet================================================ */
+@media (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+
+  #contact {
+    display: none;
+  }
+
 }

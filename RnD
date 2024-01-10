@@ -1,0 +1,43 @@
+
+.navbar .navbar-extra a.{
+  position: absolute;
+  left: 0;
+  top: -80%;
+  width: 200px;
+  height: 200px;
+  background: #879a88;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+  transition: 0.5s;
+}
+.navbar .navbar-extra a:before,
+.navbar .navbar-extra a:after
+{
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+.navbar .navbar-extra a:before{
+  border-radius: 45%;
+  background: rgba(20, 20, 20, 1);
+  animation: animate 5s linear infinite;
+}
+.navbar .navbar-extra a:after{
+  border-radius: 40%;
+  background: rgba(20, 20, 20, 0.5);
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0%
+  {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100%
+  {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
