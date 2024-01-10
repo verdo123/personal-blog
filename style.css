@@ -1,5 +1,5 @@
 :root {
-  --Primary: #2c2c2c;
+  --Primary: #0d2f3f;
   --bg: #ffffff;
 }
 
@@ -18,7 +18,8 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', sans-serif;;
+  font-family: "Poppins", sans-serif;
+  /* min-height: 2000px; */
 }
 
 .navbar {
@@ -37,31 +38,31 @@ body {
 
 .navbar .navbar-logo {
   color: var(--Primary);
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-family: "Inter", sans-serif;
   font-weight: 700;
 }
 
 .navbar .navbar-logo span {
-  color: #879a88;
+  color: #286f6c;
 }
 
-.navbar .navbar-nav a{
+.navbar .navbar-nav a {
   color: var(--Primary);
   position: relative;
   /* display: inline-block; */
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin: 0 0.5rem;
 }
- /* untuk berubah warna saaat di hover */
-.navbar .navbar-nav a:hover{
-  color: #879a88;
+/* untuk berubah warna saaat di hover */
+.navbar .navbar-nav a:hover {
+  color: #286f6c;
 }
 /* untuk memberi animasi underline */
-.navbar .navbar-nav a::after{
-  content: '';
+.navbar .navbar-nav a::after {
+  content: "";
   position: absolute;
-  background-color: #879a88;
+  background-color: var(--Primary);
   height: 1.5px;
   width: 0;
   left: 0;
@@ -73,39 +74,78 @@ body {
   width: 100%;
 }
 
-.navbar .navbar-extra a{
+.navbar .navbar-extra a {
   color: var(--Primary);
   position: relative;
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin: 0 0.5rem;
 }
 
-.navbar .navbar-extra a:hover{
-  color:#879a88;
+.navbar .navbar-extra a:hover {
+  color: #286f6c;
 }
 
-.navbar .navbar-extra span{
+.navbar .navbar-extra span {
   margin: 0 0.9rem;
 }
 
+/* Hero Section */
+.hero {
+  min-height: 78vh;
+  display: flex;
+  align-items: center;
+  background-color: #fdf8dd;
+  /* background-image: url("/aset/hero-photo-profile.svg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero .content {
+  padding: 1.4rem 10%;
+  max-width: 60rem;
+}
+
+.hero .content h1 {
+  font-size: 3rem;
+  color: var(--Primary);
+}
+
+.hero .content span {
+  font-size: 5rem;
+  color: var(--Primary);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero .content .row {
+  display: flex;
+}
+
+.hero .content .row .hallo {
+  flex: 0.8 0.8 100rem;
+}
+
+.hero .content .row .greetings {
+  flex: 0.5 0.5 100rem;
+  padding: 0 1rem;
+}
 
 /* Media Queries */
 
 /* ==========================================Laptop/Desktop============================================ */
 @media (max-width: 1366px) {
   html {
-    font-size: 75%;
+    font-size: 80%;
   }
 }
 
 /* ==============================================Tablet================================================ */
 @media (max-width: 768px) {
   html {
-    font-size: 80%;
+    font-size: 70%;
   }
 
   #contact {
     display: none;
   }
-
 }
