@@ -1,5 +1,5 @@
 :root {
-  --Primary: #0d2f3f;
+  --Primary: #2c2c2c;
   --bg: #ffffff;
 }
 
@@ -18,8 +18,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
-  /* min-height: 2000px; */
+  font-family: 'Poppins', sans-serif;
 }
 
 .navbar {
@@ -38,31 +37,31 @@ body {
 
 .navbar .navbar-logo {
   color: var(--Primary);
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-family: "Inter", sans-serif;
   font-weight: 700;
 }
 
 .navbar .navbar-logo span {
-  color: #286f6c;
+  color: #879a88;
 }
 
-.navbar .navbar-nav a {
+.navbar .navbar-nav a{
   color: var(--Primary);
   position: relative;
   /* display: inline-block; */
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin: 0 0.5rem;
 }
-/* untuk berubah warna saaat di hover */
-.navbar .navbar-nav a:hover {
-  color: #286f6c;
+ /* untuk berubah warna saaat di hover */
+.navbar .navbar-nav a:hover{
+  color: #879a88;
 }
 /* untuk memberi animasi underline */
-.navbar .navbar-nav a::after {
-  content: "";
+.navbar .navbar-nav a::after{
+  content: '';
   position: absolute;
-  background-color: var(--Primary);
+  background-color: #879a88;
   height: 1.5px;
   width: 0;
   left: 0;
@@ -74,32 +73,118 @@ body {
   width: 100%;
 }
 
-.navbar .navbar-extra a {
+.navbar .navbar-extra a{
   color: var(--Primary);
   position: relative;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin: 0 0.5rem;
 }
 
-.navbar .navbar-extra a:hover {
-  color: #286f6c;
+.navbar .navbar-extra a:hover{
+  color:#879a88;
 }
 
-.navbar .navbar-extra span {
+.navbar .navbar-extra span{
   margin: 0 0.9rem;
 }
 
 /* Hero Section */
-.hero {
+
+
+.main {
+  min-height: 100vh;
+  background-color: #fdf8dd;
+  background-image: url(../personal-blog/aset/hero-photo-profile.svg);
+  background-size: 180vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+
+.main .main-intro {
+  position: relative;
+  padding-bottom: 8vh;
+  padding: 1.5rem 10%;
+}
+
+.main .main-quotes {
+  position: relative;
+  padding-bottom: 8vh;
+  padding: 1.5rem 10%;
+}
+
+.main .main-intro h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  color: var(--Primary);
+  font-weight: 600;
+  margin-bottom: 50%;
+  
+}
+
+.main .main-intro span {
+  font-size: 5rem;
+  color: var(--Primary);
+  font-weight: 700;
+ 
+}
+
+.main .main-intro a {
+  font-size: 2rem;
+  color: var(--Primary);
+  font-weight: 300;
+  padding: 0px 0px;
+  width: fit-content;
+  
+}
+
+.main .main-quotes h2 {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--Primary);
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 75%;
+  text-align: right;
+  font-weight: 550;
+}
+
+.main .main-quotes p {
+  font-size: 1.4rem;
+  color: var(--Primary);
+  line-height: 1;
+  margin-top: 90%;
+  margin-left: 10%;
+  font-weight: 500;
+}
+
+.main .main-quotes .angka {
+  font-size: 3.5rem;
+  font-weight: 600;
+  float: left;
+  line-height: 0.8;
+  letter-spacing: 5px;
+  
+}
+
+
+
+
+/* .hero {
   min-height: 78vh;
   display: flex;
   align-items: center;
   background-color: #fdf8dd;
-  /* background-image: url("/aset/hero-photo-profile.svg"); */
+  background-image: url("/aset/hero-photo-profile.svg");
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
+
+/* 
 .hero .content {
   padding: 1.4rem 10%;
   max-width: 60rem;
@@ -128,24 +213,33 @@ body {
 .hero .content .row .greetings {
   flex: 0.5 0.5 100rem;
   padding: 0 2rem;
-}
+} */
 
 /* Media Queries */
 
 /* ==========================================Laptop/Desktop============================================ */
 @media (max-width: 1366px) {
   html {
-    font-size: 80%;
+    font-size: 75%;
   }
 }
 
 /* ==============================================Tablet================================================ */
 @media (max-width: 768px) {
   html {
-    font-size: 70%;
+    font-size: 80%;
   }
 
   #contact {
     display: none;
+  }
+
+}
+
+/* ==============================================Mobile================================================ */
+
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
   }
 }
