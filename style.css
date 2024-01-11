@@ -209,18 +209,19 @@ body {
 }
 
 .category-icon {
-  background: #fdf8dd;
-  padding: 0.1rem;
+  padding: 5rem;
   border-radius: 0.4rem;
 }
 
 .category h4 {
   margin: 1rem 0rem 1rem;
+  text-align: center;
   font-weight: 700;
 }
 
 .category p {
   margin-bottom: 4px;
+  text-align: left;
   font-size: 0.9rem;
 }
 
