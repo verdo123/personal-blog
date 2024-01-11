@@ -170,8 +170,27 @@ body {
   
 }
 
+/* Services Section */
 
+.index-category {
+  width: 100%;
+  padding: 60px ;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.index-category-box {
+
+}
+
+.index-category-box h3 {
+  font-size: 2rem;
+  line-height: 1.2;
+  color: var(--Primary);
+  font-weight: 600;
+}
 
 /* .hero {
   min-height: 78vh;
