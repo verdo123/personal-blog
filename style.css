@@ -18,7 +18,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar {
@@ -46,20 +46,20 @@ body {
   color: #879a88;
 }
 
-.navbar .navbar-nav a{
+.navbar .navbar-nav a {
   color: var(--Primary);
   position: relative;
   /* display: inline-block; */
   font-size: 0.9rem;
   margin: 0 0.5rem;
 }
- /* untuk berubah warna saaat di hover */
-.navbar .navbar-nav a:hover{
+/* untuk berubah warna saaat di hover */
+.navbar .navbar-nav a:hover {
   color: #879a88;
 }
 /* untuk memberi animasi underline */
-.navbar .navbar-nav a::after{
-  content: '';
+.navbar .navbar-nav a::after {
+  content: "";
   position: absolute;
   background-color: #879a88;
   height: 1.5px;
@@ -73,37 +73,34 @@ body {
   width: 100%;
 }
 
-.navbar .navbar-extra a{
+.navbar .navbar-extra a {
   color: var(--Primary);
   position: relative;
   font-size: 0.9rem;
   margin: 0 0.5rem;
 }
 
-.navbar .navbar-extra a:hover{
-  color:#879a88;
+.navbar .navbar-extra a:hover {
+  color: #879a88;
 }
 
-.navbar .navbar-extra span{
+.navbar .navbar-extra span {
   margin: 0 0.9rem;
 }
 
 /* Hero Section */
 
-
 .main {
   min-height: 100vh;
   background-color: #fdf8dd;
-  background-image: url(../personal-blog/aset/hero-photo-profile.svg);
+  background-image: url("../Personal_Blog/aset/hero-photo-profile.svg");
   background-size: 180vh;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
-
 
 .main .main-intro {
   position: relative;
@@ -123,14 +120,12 @@ body {
   color: var(--Primary);
   font-weight: 600;
   margin-bottom: 50%;
-  
 }
 
 .main .main-intro span {
   font-size: 5rem;
   color: var(--Primary);
   font-weight: 700;
- 
 }
 
 .main .main-intro a {
@@ -139,14 +134,13 @@ body {
   font-weight: 300;
   padding: 0px 0px;
   width: fit-content;
-  
 }
 
 .main .main-quotes h2 {
   font-size: 1rem;
   line-height: 1.5;
   color: var(--Primary);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 75%;
   text-align: right;
   font-weight: 550;
@@ -167,30 +161,84 @@ body {
   float: left;
   line-height: 0.8;
   letter-spacing: 5px;
-  
 }
 
 /* Services Section */
 
-.index-category {
-  width: 100%;
-  padding: 60px ;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.categories {
+  background: #ffffff;
+  padding: 8rem 10%;
+  min-height: 50vh;
 }
 
-.index-category-box {
-
-}
-
-.index-category-box h3 {
-  font-size: 2rem;
+.categories h3 {
   line-height: 1.2;
+  margin-bottom: 2rem;
+  font-size: 3rem;
   color: var(--Primary);
   font-weight: 600;
 }
+
+.categories-container {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  gap: 6rem;
+}
+
+.categories-right p {
+  margin: 1rem 0 3rem;
+  line-height: 1.5;
+}
+
+.categories-left {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.category {
+  background: #fdf8dd;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  transition: #879a88;
+}
+
+.category:hover {
+  box-shadow: 0 0.5rem 1rem rgba(92, 92, 92, 0.3);
+  z-index: 1;
+}
+
+.category-icon {
+  background: #fdf8dd;
+  padding: 0.1rem;
+  border-radius: 0.4rem;
+}
+
+.category h4 {
+  margin: 1rem 0rem 1rem;
+  font-weight: 700;
+}
+
+.category p {
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+/* .index-category-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 4rem;
+}
+
+.categories-left {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.categories-right {
+  margin: 1rem 0 3rem;
+} */
 
 /* .hero {
   min-height: 78vh;
@@ -201,7 +249,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 } */
-
 
 /* 
 .hero .content {
@@ -252,7 +299,6 @@ body {
   #contact {
     display: none;
   }
-
 }
 
 /* ==============================================Mobile================================================ */
