@@ -163,11 +163,11 @@ body {
   letter-spacing: 5px;
 }
 
-/* Services Section */
+/* Services Section ==============================================================*/
 
 .categories {
   background: #ffffff;
-  padding: 8rem 10%;
+  padding: 8rem 7%;
   min-height: 50vh;
 }
 
@@ -182,7 +182,7 @@ body {
 .categories-container {
   display: grid;
   grid-template-columns: 50% 40%;
-  gap: 6rem;
+  gap: 8rem;
 }
 
 .categories-right p {
@@ -192,15 +192,22 @@ body {
 
 .categories-left {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3);
   gap: 1.2rem;
+  
 }
 
 .category {
-  background: #fdf8dd;
-  padding: 2rem;
+  padding: 0.8rem 5%;
+  background-color: #ffffff;
   border-radius: 1.2rem;
   transition: #879a88;
+  border-width: 1.5px;
+  border-style: groove;
+  border-color: #e9e4c6;
+  display: flex;
+  align-items: center;
+  
 }
 
 .category:hover {
@@ -208,22 +215,69 @@ body {
   z-index: 1;
 }
 
+.category:nth-child(2) .category-icon{
+  background: #286f6c;
+}
+.category:nth-child(3) .category-icon{
+  background: #eec048;
+}
+.category:nth-child(1) .category-icon{
+  background: #f26440;
+}
+
+
 .category-icon {
-  padding: 5rem;
-  border-radius: 0.4rem;
+  background: #fdf8dd;
+  color: #fdf8dd;
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.fa-solid {
+  padding: 1rem;
+  align-items: center;
 }
 
 .category h4 {
-  margin: 1rem 0rem 1rem;
-  text-align: center;
   font-weight: 700;
+  font-size: 1.2rem;
+  margin-left: 20px;
 }
 
-.category p {
-  margin-bottom: 4px;
-  text-align: left;
-  font-size: 0.9rem;
+.category p{
+  padding: 2.5rem 0.8rem 5%;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
+
+/* .category h5 {
+  margin: 1rem 0rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+} */
+
+/* .category li {
+  margin-bottom: 4px;
+  margin-top: 2px;
+  font-size: 0.8rem;
+  list-style: none;
+  text-align: left;
+  white-space: pre;
+}
+
+.category li:not(:last-child){
+  margin-bottom: 4px;
+}
+
+.category li::before{
+  content: "\27BB";
+  color: var(--Primary);
+  margin-right: 10px;
+} */
 
 /* .index-category-container {
   display: grid;
