@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: var(--bg);
+  background-color: #fdf8dd;
   color: var(--Primary);
   box-sizing: border-box;
   padding: 0;
@@ -88,7 +88,7 @@ body {
   margin: 0 0.9rem;
 }
 
-/* Hero Section */
+/* Hero Section =========================================================*/
 
 .main {
   min-height: 100vh;
@@ -96,10 +96,11 @@ body {
   background-image: url("../Personal_Blog/aset/hero-photo-profile.svg");
   background-size: 180vh;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 50px;
 }
 
 .main .main-intro {
@@ -110,22 +111,22 @@ body {
 
 .main .main-quotes {
   position: relative;
-  padding-bottom: 8vh;
-  padding: 1.5rem 10%;
+
+  padding: 1.5rem 15%;
 }
 
 .main .main-intro h1 {
   font-size: 3rem;
   line-height: 1.2;
   color: var(--Primary);
-  font-weight: 600;
+  font-weight: 300;
   margin-bottom: 50%;
 }
 
 .main .main-intro span {
   font-size: 5rem;
   color: var(--Primary);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .main .main-intro a {
@@ -141,18 +142,18 @@ body {
   line-height: 1.5;
   color: var(--Primary);
   font-family: "Poppins", sans-serif;
-  margin-bottom: 75%;
+  margin-top: 70%;
+  margin-bottom: 130%;
   text-align: right;
-  font-weight: 550;
+  font-weight: 400;
 }
 
 .main .main-quotes p {
   font-size: 1.4rem;
   color: var(--Primary);
   line-height: 1;
-  margin-top: 90%;
-  margin-left: 10%;
-  font-weight: 500;
+  margin-left: 50%;
+  font-weight: 300;
 }
 
 .main .main-quotes .angka {
@@ -167,8 +168,8 @@ body {
 
 .categories {
   background: #ffffff;
-  padding: 8rem 7%;
-  min-height: 50vh;
+  padding: 10rem 15%;
+  min-height: 40vh;
 }
 
 .categories h3 {
@@ -181,24 +182,40 @@ body {
 
 .categories-container {
   display: grid;
-  grid-template-columns: 50% 40%;
+  grid-template-columns: 40% 60%;
   gap: 8rem;
 }
 
 .categories-right p {
-  margin: 1rem 0 3rem;
-  line-height: 1.5;
+  margin-right: 10rem;
+  margin-bottom: 3rem;
+  line-height: 2;
+}
+
+.categories-right .btn {
+  background: #f26440;
+  color: #fdf8dd;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  align-items: center;
+}
+
+.categories-right .btn:hover {
+  box-shadow: 0 0.5rem 1rem rgba(92, 92, 92, 0.3);
+  z-index: 1;
+  background: #fdf8dd;
+  color: #f26440;
 }
 
 .categories-left {
   display: grid;
   grid-template-columns: repeat(3);
-  gap: 1.2rem;
-  
+  gap: 1rem;
 }
 
 .category {
-  padding: 0.8rem 5%;
+  padding: 2rem;
   background-color: #ffffff;
   border-radius: 1.2rem;
   transition: #879a88;
@@ -207,30 +224,29 @@ body {
   border-color: #e9e4c6;
   display: flex;
   align-items: center;
-  
 }
 
 .category:hover {
   box-shadow: 0 0.5rem 1rem rgba(92, 92, 92, 0.3);
+  background: #fdf8dd;
   z-index: 1;
 }
 
-.category:nth-child(2) .category-icon{
+.category:nth-child(2) .category-icon {
   background: #286f6c;
 }
-.category:nth-child(3) .category-icon{
+.category:nth-child(3) .category-icon {
   background: #eec048;
 }
-.category:nth-child(1) .category-icon{
+.category:nth-child(1) .category-icon {
   background: #f26440;
 }
-
 
 .category-icon {
   background: #fdf8dd;
   color: #fdf8dd;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -243,16 +259,58 @@ body {
 }
 
 .category h4 {
-  font-weight: 700;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1.4rem;
   margin-left: 20px;
+  line-height: 1.2;
 }
 
-.category p{
+.category span {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* Experience Section ==============================================================*/
+
+.experience {
+  padding: 8rem 10%;
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+}
+
+.timeline__component {
+  margin: 0 2rem 2rem 2rem;
+}
+
+.timeline__office--right {
+  text-align: right;
+}
+
+.timeline__middle {
+  position: relative;
+  background-color: #286f6c;
+}
+
+.timeline__point {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 16%;
+  height: 16%;
+  background-color: #fdf8dd;
+}
+
+.timeline__office h6 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* .category p {
   padding: 2.5rem 0.8rem 5%;
   font-weight: 700;
   font-size: 1.2rem;
-}
+} */
 
 /* .category h5 {
   margin: 1rem 0rem 1rem;
@@ -339,14 +397,14 @@ body {
 /* Media Queries */
 
 /* ==========================================Laptop/Desktop============================================ */
-@media (max-width: 1366px) {
+/* @media (max-width: 1366px) {
   html {
     font-size: 75%;
   }
-}
+} */
 
 /* ==============================================Tablet================================================ */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   html {
     font-size: 80%;
   }
@@ -354,12 +412,11 @@ body {
   #contact {
     display: none;
   }
-}
+} */
 
 /* ==============================================Mobile================================================ */
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   html {
     font-size: 50%;
-  }
-}
+  } */
