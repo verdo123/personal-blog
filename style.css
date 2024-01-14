@@ -272,15 +272,56 @@ body {
 
 /* Experience Section ==============================================================*/
 
-.experience {
-  padding: 8rem 10%;
-  min-height: 80vh;
-  display: grid;
-  grid-template-columns: 1fr 3px 1fr;
+.timeline {
+  padding: 10rem 15%;
+  min-height: 40vh;
 }
 
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 70%;
+  background: #286f6c;
+}
+
+.timeline ul {
+  margin-top: 0px;
+}
+
+.timeline ul li {
+  list-style: none;
+  position: relative;
+  width: 50%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.timeline ul li:nth-child(odd) {
+  float: left;
+  text-align: right;
+  clear: both;
+}
+
+.timeline ul li:nth-child(even) {
+  float: right;
+  text-align: left;
+  clear: both;
+}
+
+/* .experience {
+  padding: 8rem 10%;
+  min-height: 80vh;
+} */
+/* .heading {
+  font-size: 3rem;
+  font-weight: 600;
+} */
+
+/* 
 .timeline__component {
-  margin: 0 2rem 2rem 2rem;
+  margin: 0 20px 20px 20px;
 }
 
 .timeline__office--right {
@@ -289,33 +330,27 @@ body {
 
 .timeline__middle {
   position: relative;
-  background-color: #286f6c;
-}
+  background: #286f6c;
+} */
 
-.timeline__point {
+/* .timeline__point {
   position: absolute;
   top: 0;
   left: 50%;
   width: 16%;
   height: 16%;
-  background-color: #fdf8dd;
-}
+  background-color: #000000;
+} */
 
-.timeline__office h6 {
+/* .timeline__office h6 {
   font-size: 1.5rem;
   font-weight: 400;
-}
+} */
 
 /* .category p {
   padding: 2.5rem 0.8rem 5%;
   font-weight: 700;
   font-size: 1.2rem;
-} */
-
-/* .category h5 {
-  margin: 1rem 0rem 1rem;
-  font-size: 0.9rem;
-  font-weight: 700;
 } */
 
 /* .category li {
