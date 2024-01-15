@@ -310,6 +310,68 @@ body {
   clear: both;
 }
 
+.content{
+  padding-bottom: 5rem;
+}
+
+.timeline ul li:nth-child(odd):before{
+  content: '';
+  position: absolute;
+  top: 37px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  background: rgb(242, 100, 64, 1);
+  border-radius: 50%;
+  box-shadow:0 0 0 5px rgb(242, 100, 64, 0.3);
+  
+}
+
+.timeline ul li:nth-child(even):before{
+  content: '';
+  position: absolute;
+  top: 37px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background: rgb(242, 100, 64, 1);
+  border-radius: 50%;
+  box-shadow:0 0 0 5px rgb(242, 100, 64, 0.3);
+  
+}
+
+.timeline ul li h5{
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--Primary);
+}
+
+.timeline ul li h6{
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--Primary);
+}
+
+.timelineul ul li p{
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.timeline ul li:nth-child(odd) .diskripsi{
+  position: absolute;
+  top: 12px;
+  right: -975px;
+  text-align: left;
+  margin: 0;
+  padding: ;
+}
+
+
+
 /* .experience {
   padding: 8rem 10%;
   min-height: 80vh;
