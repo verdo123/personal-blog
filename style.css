@@ -294,7 +294,7 @@ body {
   list-style: none;
   position: relative;
   width: 50%;
-  padding: 2rem 1rem;
+  padding: 0rem 1rem;
   box-sizing: border-box;
 }
 
@@ -310,50 +310,65 @@ body {
   clear: both;
 }
 
-.content{
-  padding-bottom: 5rem;
+.content {
+  padding: 0 0 10rem 5rem;
 }
 
-.timeline ul li:nth-child(odd):before{
-  content: '';
+.timeline ul li:nth-child(odd):before {
+  content: "";
   position: absolute;
   top: 0px;
-  right:-8px;
+  right: -8px;
   width: 15px;
   height: 15px;
   background: rgb(242, 100, 64, 1);
   border-radius: 50%;
-  box-shadow:0 0 0 5px rgb(242, 100, 64, 0.3);
-  
+  box-shadow: 0 0 0 5px rgb(242, 100, 64, 0.3);
 }
 
-.timeline ul li:nth-child(odd):after{
-  content: '';
+.timeline ul li:nth-child(odd):after {
+  content: "";
   position: absolute;
   top: -10.5px;
-  right:-18px;
+  right: -18px;
   width: 32px;
   height: 32px;
   border-radius: 50%;
   border: 2px dashed #286f6c;
-  
 }
 
-
-.timeline ul li:nth-child(even):before{
-  content: '';
+.timeline ul li:nth-child(even):after {
+  content: "";
   position: absolute;
-  top: 37px;
-  right: 85px;
-  width: 10px;
-  height: 10px;
-  background: rgb(242, 100, 64, 1);
+  top: -10.5px;
+  right: -18px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  box-shadow:0 0 0 1px rgb(242, 100, 64, 0.3);
-  
+  border: 2px dashed #286f6c;
 }
 
-.timeline ul li h5{
+.timeline ul li:nth-child(even):before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -8px;
+  width: 15px;
+  height: 15px;
+  background: rgb(40, 111, 108, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px rgba(40, 111, 107, 0.3);
+}
+
+.timeline ul li h5 {
+  margin: 0 0 35px 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--Primary);
+}
+
+.timeline ul li h6 {
   margin: 0;
   padding: 0;
   font-weight: 700;
@@ -361,38 +376,26 @@ body {
   color: var(--Primary);
 }
 
-.timeline ul li h6{
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: var(--Primary);
-}
-
-.timelineul ul li p{
+.timelineul ul li p {
   margin: 10px 0 0;
   padding: 0;
 }
 
-.timeline ul li:nth-child(odd) .diskripsi{
+.timeline ul li:nth-child(odd) .diskripsi {
   position: absolute;
   top: 27px;
   right: -57rem;
   text-align: left;
   margin: -2rem 20rem 0 45rem;
-  
 }
 
-.timeline ul li:nth-child(even) .diskripsi{
+.timeline ul li:nth-child(even) .diskripsi {
   position: absolute;
   top: 27px;
   right: -57rem;
   text-align: left;
-  margin: 0 20rem 0 40rem;
-  
+  margin: -2rem 20rem 0 45rem;
 }
-
-
 
 /* .experience {
   padding: 8rem 10%;
