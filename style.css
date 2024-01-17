@@ -273,7 +273,7 @@ body {
 /* Experience Section ==============================================================*/
 
 .timeline {
-  padding: 10rem 15%;
+  padding: 15rem 15%;
   min-height: 40vh;
 }
 
@@ -282,8 +282,8 @@ body {
   position: absolute;
   left: 50%;
   width: 2px;
-  height: 70%;
-  background: #286f6c;
+  height: 75%;
+  border-left: 2px dashed #286f6c;
 }
 
 .timeline ul {
@@ -300,12 +300,12 @@ body {
 
 .timeline ul li:nth-child(odd) {
   float: left;
-  text-align: right;
+  text-align: left;
   clear: both;
 }
 
 .timeline ul li:nth-child(even) {
-  float: right;
+  float: left;
   text-align: left;
   clear: both;
 }
@@ -317,26 +317,39 @@ body {
 .timeline ul li:nth-child(odd):before{
   content: '';
   position: absolute;
-  top: 37px;
-  right: -6px;
-  width: 10px;
-  height: 10px;
+  top: 0px;
+  right:-8px;
+  width: 15px;
+  height: 15px;
   background: rgb(242, 100, 64, 1);
   border-radius: 50%;
   box-shadow:0 0 0 5px rgb(242, 100, 64, 0.3);
   
 }
 
+.timeline ul li:nth-child(odd):after{
+  content: '';
+  position: absolute;
+  top: -10.5px;
+  right:-18px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px dashed #286f6c;
+  
+}
+
+
 .timeline ul li:nth-child(even):before{
   content: '';
   position: absolute;
   top: 37px;
-  left: -4px;
+  right: 85px;
   width: 10px;
   height: 10px;
   background: rgb(242, 100, 64, 1);
   border-radius: 50%;
-  box-shadow:0 0 0 5px rgb(242, 100, 64, 0.3);
+  box-shadow:0 0 0 1px rgb(242, 100, 64, 0.3);
   
 }
 
@@ -363,11 +376,20 @@ body {
 
 .timeline ul li:nth-child(odd) .diskripsi{
   position: absolute;
-  top: 12px;
-  right: -975px;
+  top: 27px;
+  right: -57rem;
   text-align: left;
-  margin: 0;
-  padding: ;
+  margin: -2rem 20rem 0 45rem;
+  
+}
+
+.timeline ul li:nth-child(even) .diskripsi{
+  position: absolute;
+  top: 27px;
+  right: -57rem;
+  text-align: left;
+  margin: 0 20rem 0 40rem;
+  
 }
 
 
