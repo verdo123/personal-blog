@@ -273,16 +273,27 @@ body {
 /* Experience Section ==============================================================*/
 
 .timeline {
-  padding: 15rem 15%;
-  min-height: 40vh;
+  padding: 7rem 15%;
+  min-height: 75vh;
 }
+
+.header {
+  padding: 8rem 0 0 0;
+}
+
+.header h5{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
 
 .timeline::before {
   content: "";
   position: absolute;
   left: 50%;
   width: 2px;
-  height: 75%;
+  height: 67%;
   border-left: 2px dashed #286f6c;
 }
 
@@ -311,7 +322,7 @@ body {
 }
 
 .content {
-  padding: 0 0 10rem 5rem;
+  padding: 0 0 7rem 2rem;
 }
 
 .timeline ul li:nth-child(odd):before {
@@ -323,7 +334,7 @@ body {
   height: 15px;
   background: rgb(242, 100, 64, 1);
   border-radius: 50%;
-  box-shadow: 0 0 0 5px rgb(242, 100, 64, 0.3);
+  box-shadow: 0 0 0 10px rgb(255, 249, 216);
 }
 
 .timeline ul li:nth-child(odd):after {
@@ -357,28 +368,34 @@ body {
   height: 15px;
   background: rgb(40, 111, 108, 1);
   border-radius: 50%;
-  box-shadow: 0 0 0 5px rgba(40, 111, 107, 0.3);
-}
-
-.timeline ul li h5 {
-  margin: 0 0 35px 0;
-  padding: 0;
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: var(--Primary);
+  box-shadow: 0 0 0 10px rgb(255, 249, 216);
 }
 
 .timeline ul li h6 {
-  margin: 0;
+  margin: 0 0 30px 0;
   padding: 0;
   font-weight: 700;
   font-size: 1.2rem;
   color: var(--Primary);
 }
 
-.timelineul ul li p {
-  margin: 10px 0 0;
+.timeline ul li h7 {
+  margin: 0 0 35px 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--Primary);
+}
+
+/* .timelineul ul li p {
+  margin: 10px 0 35px;
   padding: 0;
+  line-height: 1.5;
+} */
+
+.diskripsi p {
+  margin: 15px 0 35px;
+  line-height: 2;
+  font-size: 1rem;
 }
 
 .timeline ul li:nth-child(odd) .diskripsi {
@@ -396,7 +413,6 @@ body {
   text-align: left;
   margin: -2rem 20rem 0 45rem;
 }
-
 /* .experience {
   padding: 8rem 10%;
   min-height: 80vh;
