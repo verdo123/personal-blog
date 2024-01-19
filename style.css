@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: #fdf8dd;
+  background-color: #f8f7f1;
   color: var(--Primary);
   box-sizing: border-box;
   padding: 0;
@@ -92,7 +92,7 @@ body {
 
 .main {
   min-height: 100vh;
-  background-color: #fdf8dd;
+  background-color: #f8f7f1;
   background-image: url("../Personal_Blog/aset/hero-photo-profile.svg");
   background-size: 180vh;
   background-repeat: no-repeat;
@@ -194,7 +194,7 @@ body {
 
 .categories-right .btn {
   background: #f26440;
-  color: #fdf8dd;
+  color: #f8f7f1;
   justify-content: center;
   padding: 1rem;
   border-radius: 0.7rem;
@@ -204,7 +204,7 @@ body {
 .categories-right .btn:hover {
   box-shadow: 0 0.5rem 1rem rgba(92, 92, 92, 0.3);
   z-index: 1;
-  background: #fdf8dd;
+  background: #f8f7f1;
   color: #f26440;
 }
 
@@ -228,7 +228,7 @@ body {
 
 .category:hover {
   box-shadow: 0 0.5rem 1rem rgba(92, 92, 92, 0.3);
-  background: #fdf8dd;
+  background: #f8f7f1;
   z-index: 1;
 }
 
@@ -243,8 +243,8 @@ body {
 }
 
 .category-icon {
-  background: #fdf8dd;
-  color: #fdf8dd;
+  background: #f8f7f1;
+  color: #f8f7f1;
   width: 70px;
   height: 70px;
   display: inline-flex;
@@ -334,7 +334,7 @@ body {
   height: 15px;
   background: rgb(242, 100, 64, 1);
   border-radius: 50%;
-  box-shadow: 0 0 0 10px rgb(255, 249, 216);
+  box-shadow: 0 0 0 10px #f8f7f1;
 }
 
 .timeline ul li:nth-child(odd):after {
@@ -368,7 +368,7 @@ body {
   height: 15px;
   background: rgb(40, 111, 108, 1);
   border-radius: 50%;
-  box-shadow: 0 0 0 10px rgb(255, 249, 216);
+  box-shadow: 0 0 0 10px #f8f7f1;
 }
 
 .timeline ul li h6 {
@@ -380,7 +380,7 @@ body {
 }
 
 .timeline ul li h7 {
-  margin: 0 0 35px 0;
+  margin: 0 0 30px 0;
   font-weight: 700;
   font-size: 1.2rem;
   color: var(--Primary);
@@ -393,7 +393,7 @@ body {
 } */
 
 .diskripsi p {
-  margin: 15px 0 35px;
+  margin: 15px 0 30px;
   line-height: 2;
   font-size: 1rem;
 }
@@ -495,7 +495,7 @@ body {
   min-height: 78vh;
   display: flex;
   align-items: center;
-  background-color: #fdf8dd;
+  background-color: #f8f7f1;
   background-image: url("/aset/hero-photo-profile.svg");
   background-repeat: no-repeat;
   background-position: center;
