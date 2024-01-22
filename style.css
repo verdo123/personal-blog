@@ -418,7 +418,7 @@ body {
 .wrapper {
   background: #ffffff;
   padding: 10rem 15%;
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
