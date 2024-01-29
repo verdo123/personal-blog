@@ -424,6 +424,12 @@ body {
   justify-content: center;
 }
 
+.wrapper h8{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
 .container {
   height: 400px;
   display: flex;
@@ -449,6 +455,7 @@ body {
   color: white;
   display: flex;
   flex-wrap: nowrap;
+  margin: 0 0 10px 0;
 }
 
 .card > .row > .icon {
@@ -468,19 +475,19 @@ body {
   flex-direction: column;
   overflow: hidden;
   height: 80px;
-  width: 520px;
+  width: 620px;
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(50px);
   transition-delay: .3s;
   transition: all .3s ease;
 }
 
 .description p {
   color: var(--Primary);
-  padding-top: 5px;
+  padding: 2px 0 1rem 0;
 }
 
-.description h8 {
+.description h9 {
   text-transform: uppercase;
 }
 
